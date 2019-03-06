@@ -3,7 +3,7 @@
 
     <h1 class="wow bounceInRight" data-wow-duration="5s" data-wow-delay="0.5s"><a [href]='feeds.url' target="_blank">{{feeds.title}}</a></h1>
 
-      <div class="col-md-8 wow bounceInRight" style="height: 50%" *ngFor='let i of response | slice:0:1' data-wow-duration="5s" data-wow-delay="0.5s">
+      <div class="col-md-8 wow bounceInLeft" style="height: 50%" *ngFor='let i of response | slice:0:1' data-wow-duration="5s" data-wow-delay="0.5s">
         <div class="parent">
           <img [src]="i.enclosure.link">   
           <a [href]='i.link' target="_blank">
@@ -27,7 +27,7 @@
         </div>  
       </div>
 
-      <div class="col-md-8 wow bounceInRight" style="height: 50%" *ngFor='let i of response | slice:9:10' data-wow-duration="5s" data-wow-delay="0.5s">
+      <div class="col-md-8 wow bounceInLeft" style="height: 50%" *ngFor='let i of response | slice:9:10' data-wow-duration="5s" data-wow-delay="0.5s">
         <div class="parent">
           <img [src]="i.enclosure.link">   
           <a [href]='i.link' target="_blank">
