@@ -6,6 +6,7 @@ import { HomeServiceService } from '../home-service.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
   response = [];
@@ -16,6 +17,8 @@ export class HomeComponent implements OnInit {
   };
 
   constructor(private _home:HomeServiceService) {}
+
+  // Get news data from items array in the API that i called it through home-service.service.ts
 
   getAllNews(){
     return this._home.getNews().subscribe( data => {
@@ -29,6 +32,8 @@ export class HomeComponent implements OnInit {
 
     });
   }
+
+  // Get CNN - RSS Channed link from feed object in the API that i called it through home-service.service.ts
 
   getFeed(){
     return this._home.getNews().subscribe( feed => {

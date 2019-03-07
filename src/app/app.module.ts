@@ -21,4 +21,5 @@ import { ShortcutPipe } from './shortcut.pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
